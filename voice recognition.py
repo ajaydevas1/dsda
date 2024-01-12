@@ -1,6 +1,9 @@
 import speech_recognition as sr
 import pyttsx3
 
+#voice recognition using python 
+#speech to voice 
+
 def recognize_and_respond():
     recognizer = sr.Recognizer()
     engine = pyttsx3.init()
