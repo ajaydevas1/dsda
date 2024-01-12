@@ -1,6 +1,6 @@
 print("Order Details\n ")
 
-"""fileinput_names = input("Enter file name to store customer details: ")
+fileinput_names = input("Enter file name to store customer details: ")
 with open(fileinput_names, "w") as cust_names:
     for i in range(2):
         fname = input("Enter first name of customer: ")
@@ -20,7 +20,6 @@ with open(fileinput_orders, "w") as cust_orders:
         cust_orders.write(f"Telephone Number: {tele_no}, Pizza Type: {pizza_type}, Pizza Quantity: {pizza_quantity}\n")
         print("Writtennn.....")
 
-        """
 
 
 with open("custnames.txt", "r") as infile_names:
