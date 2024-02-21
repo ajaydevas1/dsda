@@ -1,14 +1,19 @@
 import mysql.connector
 
+#make sure you written everthing write
+#install mysql.connector through(pip install mysql-connector-python)
+#its here till we have new project help me out in that 
+#call me out if to make change in this file 
 conn = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='ajaypro@14',
+    passwd='root',
     port=3306,
-    database='fydsda30'
+    database='your_databse'
 )
 cursor = conn.cursor()
 
+#its worked on my databse 
 def read_data(cursor, conn):
     query = "SELECT * FROM student;"
     cursor.execute(query)
@@ -16,6 +21,7 @@ def read_data(cursor, conn):
     for row in table:
         print(row)
 
+#change the values according to your table and databse
 def add_new_details(cursor, conn):
     try:
         rno = int(input("Enter Roll No. of New student ...Check in Database before inserting new details: "))
@@ -101,6 +107,7 @@ def delete_column(cursor, conn):
         conn.rollback()
         print("Error deleting column:", e)
 
+#ruining in while loop until the statement is wrong
 while True:
     print("\n1. Read Details in Database")
     print("2. Insert Details in Database")
